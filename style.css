@@ -96,6 +96,24 @@ body {
     grid-template-rows: 1fr 1fr;
 }
 
+.top-line {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
+}
+
+.top-line .bell-notification {
+    display: flex;
+    gap: 20px;
+}
+
+.bottom-line {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    text-align: center;
+    padding: 10px;
+}
+
 /* main */
 .main {
     background-color: #d3d3d3;
