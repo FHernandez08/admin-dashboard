@@ -45,9 +45,10 @@ table {
 
 body {
     display: grid;
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: 1fr 5fr;
     height: 100%;
     width: 100%;
+    font-family: "Roboto", sans-serif;
 }
 
 /* sidebar */
@@ -98,23 +99,90 @@ body {
 
 .top-line {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 20px;
+    grid-template-columns: 2fr 0.75fr;
+    padding: 10px 30px;
 }
 
-.top-line .bell-notification {
+.top-line .search-bar {
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-line {
+    width: 750px;
+    height: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: #d3d3d3;
+}
+
+.bell-notification {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.bell-notification .main-logo {
+    height: 35px;
+    width: 35px;
+    border-radius: 20px;
+}
+
+.bell-notification h4 {
+    font-weight: bold;
 }
 
 .bottom-line {
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    text-align: center;
-    padding: 10px;
+    grid-template-columns: 2fr 1fr;
+    padding: 10px 30px;
 }
+
+.bottom-line .left-side {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.left-side .main-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.left-side .text-section {
+    font-weight: bold;
+}
+
+.bottom-line .right-side {
+    display: flex;
+    gap: 30px;
+}
+
+.right-side .header-btn {
+    width: 100px;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    background-color: #4169e1;
+    color: #ffffff;
+}
+
+
 
 /* main */
 .main {
     background-color: #d3d3d3;
+    display: grid;
+    grid-template-columns: 4.5fr 1fr;
+    padding: 25px 25px 50px 20px;
+    gap: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1.5fr 1.5fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
