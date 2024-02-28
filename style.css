@@ -172,6 +172,8 @@ body {
 
 
 /* main */
+
+/* left-side of main section */
 .main {
     background-color: #d3d3d3;
     display: grid;
@@ -180,9 +182,42 @@ body {
     gap: 10px;
 }
 
+.main h1 {
+    font-weight: 700;
+}
+
 .grid {
     display: grid;
     grid-template-rows: 1.5fr 1.5fr 1.5fr;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+}
+
+
+
+/* right-side of main section */
+.content-section {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.announcements {
+    
+}
+
+.trending {
+
+}
+
+.content-section .line-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.line-section img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
 }
